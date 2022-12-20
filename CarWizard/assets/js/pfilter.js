@@ -53,3 +53,16 @@ let Condition = [
     {name: 'BMW 3 Series', condition: used},
     {name: 'Chevrolet Blazer', condition: used},
 ]
+
+let field = document.querySelector('product-item');
+let li = Array.from(field.children);
+let select = document.getElementById('price');
+let ar = [];
+
+for(let i of li )
+{
+    const last =i.lastElementChild;
+    const x = last.textContent.trim();
+    const y = Number(x.substring(1));
+    i.setAttribute('data-price')
+}

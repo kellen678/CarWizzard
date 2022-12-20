@@ -97,32 +97,32 @@
                   <label>Condition:</label>
                      <select class="form-control">
                           <option value="">Condition</option>
-                          <option value="new">New vehicle</option>
-                          <option value="used">Used vehicle</option>
+                          <option value="condition">New</option>
+                          <option value="condition">Used</option>
                      </select>
                      <label>Year:</label>
                      <select class="form-control">
-                          <option value="">Year</option>
-                          <option value="">2022</option>
-                          <option value="">2021</option>
-                          <option value="">2020</option>
-                          <option value="">2019</option>
-                          <option value="">2018</option>
-                          <option value="">2017</option>
-                          <option value="">2016</option>
-                          <option value="">2015</option>
-                          <option value="">2014</option>
-                          <option value="">2013</option>
-                          <option value="">2012</option>
-                          <option value="">2011</option>
-                          <option value="">2009</option>
-                          <option value="">2007</option>
+                          <option value="year">Year</option>
+                          <option value="year">2022</option>
+                          <option value="year">2021</option>
+                          <option value="year">2020</option>
+                          <option value="year">2019</option>
+                          <option value="year">2018</option>
+                          <option value="year">2017</option>
+                          <option value="year">2016</option>
+                          <option value="year">2015</option>
+                          <option value="year">2014</option>
+                          <option value="year">2013</option>
+                          <option value="year">2012</option>
+                          <option value="year">2011</option>
+                          <option value="year">2009</option>
+                          <option value="year">2007</option>
                      </select>
                      
                      <label>Make:</label>
 
                      <select class="form-control">
-                      <option value="">Make</option>
+                      <option value="make">Make</option>
                       <option value="">Acura</option>
                       <option value="">Audi</option>
                       <option value="">BMW</option>
@@ -147,18 +147,17 @@
                     <label>Price:</label>
                      
                     <select class="form-control">
-                         <option value="">Price </option>
-                         <option value="">$0-$5,000 </option>
-                         <option value="">$5,000-$10,000 </option>
-                         <option value="">$10,000-$15,000  </option>
-                         <option value="">$15,000-$20,000  </option>
-                         <option value="">$20,000-$25,000 </option>
-                         <option value="">$15,000-$30,000 </option>
-                         <option value="">$30,000+ </option>
+                      <select name ="" id="price">
+                         <option value="default">Price </option>
+                         <option value="0-5">$0-$5,000 </option>
+                         <option value="5-10">$5,000-$10,000 </option>
+                         <option value="10-15">$10,000-$15,000  </option>
+                         <option value="15-20">$15,000-$20,000  </option>
+                         <option value="20-25">$20,000-$25,000 </option>
+                         <option value="15-30">$15,000-$30,000 </option>
+                         <option value="30">$30,000+ </option>
+                      </select>
                     </select>
-               
-
-                     <button type="submit" class="filled-button btn-block">Search</button>
                 </form>
              </div>
           </div>
@@ -383,3 +382,5 @@
   </body>
 
 </html>
+
+<script type="text/javaScript" src="CarWizard/assets/js/pfilter.js"><</script>
