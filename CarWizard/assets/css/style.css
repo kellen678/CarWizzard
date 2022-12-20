@@ -709,14 +709,14 @@ footer .inner-content p a {
 	margin-top: 100px;
 }
 
-.products .filters {
+.product-card {
 	text-align: center;
 	border-bottom: 1px solid #eee;
 	padding-bottom: 10px;
 	margin-bottom: 60px;
 }
 
-.products .filters li {
+.product-card .filters li {
 	text-transform: uppercase;
 	font-size: 13px;
 	font-weight: 700;
@@ -727,8 +727,8 @@ footer .inner-content p a {
 	cursor: pointer;
 }
 
-.products .filters ul li.active,
-.products .filters ul li:hover {
+.product-card .filters ul li.active,
+.product-card .filters ul li:hover {
   color: #f33f3f;
 }
 
@@ -1207,17 +1207,4 @@ footer .inner-content p a {
 	.product-item .down-content h6 {
 		margin-bottom: 20px;
 	}
-	img {
-		width: 200px;
-	  }
-	  
-	  .products {
-		display: flex;
-		flex-wrap: wrap;
-		margin: 30px 0;
-	  }
-	  
-	  .product-card {
-		margin: 0 10px 0 0;
-	  }
 }
