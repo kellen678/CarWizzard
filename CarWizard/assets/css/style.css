@@ -413,7 +413,7 @@ header .navbar {
 
 .banner-item-02 {
 	padding: 300px 0px;
-	background-image: url(../images/slider-image-2-1920x600.jpg);
+	background-image: url(../images/AD\ 2.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -448,7 +448,7 @@ header .navbar {
 }
 
 .banner .text-content h2 {
-	color: #fff;
+	color: rgb(0, 0, 0);
 	font-size: 62px;
 	text-transform: uppercase;
 	letter-spacing: 5px;
