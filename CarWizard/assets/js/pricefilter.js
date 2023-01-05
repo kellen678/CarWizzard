@@ -1,6 +1,6 @@
-function getSelectedValueMake() {
-  const selectValue = document.getElementById("make").value;
-  const acceptedValues = ['Acura', 'Audi', 'BMW', 'Chevrolet','Ford','Honda','Hyundai','Jeep','Kia','Nissan','Ram','Toyota','Volkswagen','Volvo','Mazda','Mercedes-Benz','Mini Coupe','Infiniti','Lexus'];
+function getSelectedValuePrice() {
+  const selectValue = document.getElementById("price").value;
+  const acceptedValues = ['0to5', '5to10', '15to20', '20to25', '25to30','30to35','35to40','40+'];
   const productCards = document.querySelectorAll('.product-item');
 
   productCards.forEach(card => {

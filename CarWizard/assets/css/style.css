@@ -538,6 +538,7 @@ header .navbar {
 	margin-bottom: 20px;
 }
 
+
 .product-item .down-content ul li {
 	display: inline-block;
 }
@@ -580,6 +581,8 @@ header .navbar {
 .about-features .container .row {
 	padding-bottom: 0px!important;
 	border-bottom: none!important;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .best-features {
@@ -750,7 +753,7 @@ footer .inner-content p a {
 	left:0;
 	bottom:0;
 	right:0;
-	background-color:rgba(0,0,0,.7);
+	background-color:rgba(0,0,20,.7);
 }
 .page-heading .container {
 	position:relative;
