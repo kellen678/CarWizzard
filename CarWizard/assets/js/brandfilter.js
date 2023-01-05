@@ -1,10 +1,9 @@
-
 function getSelectedValue() {
     var selectValue = document.getElementById("make").value;
     console.log(selectValue);
-    var acceptedValues = 
-    ['Acura', 'Audi', 'BMW', 'Chevrolet','Ford','Honda','Hyundai','Jeep','Kia','Nissan','Ram','Toyota','Volkswagen','Volvo','Mazda','Mercedes-Benz','Mini Coupe','Infiniti','Lexus',];
-    const productCards = document.querySelectorAll('.product-card');
+    var acceptedValues = ['Acura', 'Audi', 'BMW', 'Chevrolet','Ford','Honda','Hyundai','Jeep', 'Kia','Nissan','Ram','Toyota','Volkswagen','Volvo','Mazda','Mercedes-Benz','Mini Coupe','Infiniti','Lexus',];
+
+    const productCards = document.querySelectorAll('.product-item');
     console.log(productCards);
   
     productCards.forEach(card => {
