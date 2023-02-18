@@ -45,7 +45,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+                <li class="nav-item ">
                     <a class="nav-link" href="index.html">Home
                       <span class="sr-only">(current)</span>
                     </a>
@@ -82,7 +82,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="text-content">
-              <h4>Used</h4>
+              <h4>used</h4>
               <h2>Cars</h2>
             </div>
           </div>
@@ -97,84 +97,89 @@
              <div class="contact-form">
                 <form action="#">
 
-                  <select id="condition">
-                      <option selected="selected">Condition</option>
-                          <option value="condition">Used</option>
+                  <label></label>
+                     <select class="form-control">
+                          <option value="">Condition</option>
+                          <option value="new">New vehicle</option>
+                          <option value="used">Used vehicle</option>
                      </select>
-
-                          <select id="year" onchange="getSelectedValueYear()">
-                          <option selected="selected">Year</option>
-                          <option value="2022">2022</option>
-                          <option value="2021">2021</option>
-                          <option value="2020">2020</option>
-                          <option value="2019">2019</option>
-                          <option value="2018">2018</option>
-                          <option value="2017">2017</option>
-                          <option value="2016">2016</option>
-                          <option value="2015">2015</option>
-                          <option value="2014">2014</option>
-                          <option value="2013">2013</option>
-                          <option value="2012">2012</option>
-                          <option value="2011">2011</option>
-                          <option value="2009">2009</option>
-                          <option value="2007">2007</option>
+                     <label></label>
+                     <select class="form-control">
+                          <option value="">Year</option>
+                          <option value="">2022</option>
+                          <option value="">2021</option>
+                          <option value="">2020</option>
+                          <option value="">2019</option>
+                          <option value="">2018</option>
+                          <option value="">2017</option>
+                          <option value="">2016</option>
+                          <option value="">2015</option>
+                          <option value="">2014</option>
+                          <option value="">2013</option>
+                          <option value="">2012</option>
+                          <option value="">2011</option>
+                          <option value="">2009</option>
+                          <option value="">2007</option>
                      </select>
                      
-                     <select id="make" onchange="getSelectedValueMake()">
-                      <option selected="selected">Make</option>
-                      <option value="Acura">Acura</option>
-                      <option value="Audi">Audi</option>
-                      <option value="BMW">BMW</option>
-                      <option value="Chevrolet">Chevrolet</option>
-                      <option value="Ford">Ford</option>
-                      <option value="Honda">Honda</option>
-                      <option value="Hyundai">Hyundai</option>
-                      <option value="Jeep">Jeep</option>
-                      <option value="Kia">Kia</option>
-                      <option value="Nissan">Nissan</option>
-                      <option value="Ram">Ram</option>
-                      <option value="Toyota">Toyota</option>
-                      <option value="Volkswagen">Volkswagen</option>
-                      <option value="Volvo">Volvo</option>
-                      <option value="Mazda">Mazda</option>
-                      <option value="Mercedes-Benz">Mercedes-Benz</option>
-                      <option value="Mini Coupe">Mini Coupe</option>
-                      <option value="Infiniti">Infiniti</option>
-                      <option value="Lexus">Lexus</option>
+                     <label></label>
+
+                     <select class="form-control">
+                      <option value="">Make</option>
+                      <option value="">Acura</option>
+                      <option value="">Audi</option>
+                      <option value="">BMW</option>
+                      <option value="">Chevrolet</option>
+                      <option value="">Ford</option>
+                      <option value="">Honda</option>
+                      <option value="">Hyundai</option>
+                      <option value="">Jeep</option>
+                      <option value="">Kia</option>
+                      <option value="">Nissan</option>
+                      <option value="">Ram</option>
+                      <option value="">Toyota</option>
+                      <option value="">Volkswagen</option>
+                      <option value="">Volvo</option>
+                      <option value="">Mazda</option>
+                      <option value="">Mercedes-Benz</option>
+                      <option value="">Mini Coupe</option>
+                      <option value="">Infiniti</option>
+                      <option value="">Lexus</option>
                     </select>
 
-                    <select id="price" onchange="getSelectedValuePrice()">
-                      <option selected="selected">Price</option>
-                      <option value="0to5">$0-$5,000</option>
-                      <option value="5to10">$5,000-$10,000</option>
-                      <option value="15to20">$15,000-$20,000</option>
-                      <option value="20to25">$20,000-$25,000</option>
-                      <option value="25to30">$25,000-$30,000</option>
-                      <option value="30to35">$30,000-$35,000</option>
-                      <option value="40+">$40,000+</option>
-                    </select>             
-                      <button type="button" class="filled-button btn-block"
-                      >Search</button>
-                    </form>
-                  </div>
-                </div>
+                    <label></label>
+                     
+                    <select class="form-control">
+                         <option value="">Price </option>
+                         <option value="">$0-$5,000 </option>
+                         <option value="">$5,000-$10,000 </option>
+                         <option value="">$10,000-$15,000  </option>
+                         <option value="">$15,000-$20,000  </option>
+                         <option value="">$20,000-$25,000 </option>
+                         <option value="">$15,000-$30,000 </option>
+                         <option value="">$30,000+ </option>
+                    </select>
+                    
+                     <button type="submit" class="filled-button btn-block">Search</button>
+                </form>
+             </div>
+          </div>
 
           <div class="col-md-9">
             <div class="row">
-              <div class="col-md-6"> 
-                <div class="product-item 2016 Acura 15to20">
-                  <a href="acura_ilx.html"><img src="acura/ilx/outside_LI.jpg" alt=""></a>
+              <div class="col-md-6">
+                <div class="product-item">
+                  <a href="ram_.html"><img src="ram/1.jpg" alt=""></a>
                   <div class="down-content">
+                    <a href="ram_.html"><h4>2017 Ram 1500</h4></a>
 
-                    <a href="acura_ilx.html"> <h4>2016 Acura ILX </h4></a>
-                    
-                    <h6><small><del> $20,535</del></small> $19,483</h6>
+                    <h6><small><del> $28,177</del></small> $26,733</h6>
 
-                    <p;p>201 HP &nbsp;/&nbsp; Acura  &nbsp;/&nbsp; 2016 &nbs/&nbsp; FWD</p>
+                    <p>345 HP &nbsp;/&nbsp; Ram  &nbsp;/&nbsp; 2019 &nbsp;/&nbsp; 4WD</p>
 
                     <small>
-                      <strong title="Author"><i class="fa fa-dashboard"></i> 50,741 MI</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                      <strong title="Author"><i class="fa fa-cube"></i> Blue</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <strong title="Author"><i class="fa fa-dashboard"></i> 45,229 </strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                      <strong title="Author"><i class="fa fa-cube"></i> red </strong>&nbsp;&nbsp;&nbsp;&nbsp;
                       <strong title="Views"><i class="fa fa-cog"></i> Automatic</strong>
                     </small>
                   </div>
@@ -182,36 +187,18 @@
               </div>
 
               <div class="col-md-6">
-                <div class="product-item 2018 Acura 25to30">
-                  <a href="acura_tlx.html"><img src="acura/tlx/outside.jpg" alt=""></a>
+                <div class="product-item">
+                  <a href="toyota_.html"><img src="toyota/camry/1.png" alt=""></a>
                   <div class="down-content">
-                    <a href="acura_tlx.html"><h4>2018 <div style="display: inline" class="make">Acura</div> TLX </h4></a>
+                    <p style="padding: 10px; margin: 23px">
+                    <a href="toyota_.html"><h4>2020 Toyota Camry SE</h4></a>
 
-                    <h6><small><del> $28,399</del></small> $26,944</h6>
+                    <h6><small><del> $22,933</del></small> $21,758</h6>
 
-                    <p>206 HP &nbsp;/&nbsp; Acura &nbsp;/&nbsp; 2018 &nbsp;/&nbsp; AWD</p>
+                    <p>203 HP &nbsp;/&nbsp; Toyota &nbsp;/&nbsp; 2020 &nbsp;/&nbsp; FWD</p>
 
                     <small>
-                      <strong title="Author"><i class="fa fa-dashboard"></i> 89,367</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                      <strong title="Author"><i class="fa fa-cube"></i> White</strong>&nbsp;&nbsp;&nbsp;&nbsp;
-                      <strong title="Views"><i class="fa fa-cog"></i> Automatic</strong>
-                    </small>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <div class="product-item 2019 Audi 35to40">
-                  <a href="audi_Q5.html"><img src="Audi/Q5/first.jpg" alt=""></a>
-                  <div class="down-content">
-                    <a href="audi_Q5.html"><h4>2019 <div style="display: inline" class="make">Audi</div> Q5</h4></a>
-
-                    <h6><small><del> $38,511</del></small> $36,538</h6>
-
-                    <p>190 HP &nbsp;/&nbsp; Audi &nbsp;/&nbsp; 2008 &nbsp;/&nbsp; AWD</p>
-
-                    <small>
-                      <strong title="Author"><i class="fa fa-dashboard"></i> 39,804</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                      <strong title="Author"><i class="fa fa-dashboard"></i> 64,371</strong> &nbsp;&nbsp;&nbsp;&nbsp;
                       <strong title="Author"><i class="fa fa-cube"></i> Gray</strong>&nbsp;&nbsp;&nbsp;&nbsp;
                       <strong title="Views"><i class="fa fa-cog"></i> Automatic</strong>
                     </small>
@@ -220,18 +207,18 @@
               </div>
 
               <div class="col-md-6">
-                <div class="product-item 2019 BMW 35to40">
-                  <a href="Bmw_x4.html"><img src="bmw/X4/first.jpg"alt=""></a>
+                <div class="product-item">
+                  <a href="toyota_highlander.html"><img src="toyota/highlander/1.jpg" alt=""></a>
                   <div class="down-content">
-                    <a href="Bmw_x4.html"><h4>2019 <div style="display: inline" class="make">BMW</div> X4 xDrive30i</h4></a>
+                    <a href="toyota_highlander.html"><h4> 2016 Toyota Highlander</h4></a>
 
-                    <h6><small><del> $42,158</del></small> $39,998</h6>
+                    <h6><small><del> $20,750</del></small> $19,687</h6>
 
-                    <p>248 HP &nbsp;/&nbsp; BMW &nbsp;/&nbsp; 2019 &nbsp;/&nbsp; AWD</p>
+                    <p>185 HP &nbsp;/&nbsp; Toyota  &nbsp;/&nbsp; 2016 &nbsp;/&nbsp; AWD</p>
 
                     <small>
-                      <strong title="Author"><i class="fa fa-dashboard"></i> 38,902</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                      <strong title="Author"><i class="fa fa-cube"></i> Black</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <strong title="Author"><i class="fa fa-dashboard"></i> 105,685</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                      <strong title="Author"><i class="fa fa-cube"></i> Silver</strong>&nbsp;&nbsp;&nbsp;&nbsp;
                       <strong title="Views"><i class="fa fa-cog"></i> Automatic</strong>
                     </small>
                   </div>
@@ -239,18 +226,18 @@
               </div>
 
               <div class="col-md-6">
-                <div class="product-item 2019 BMW 15to20">
-                  <a href="bmw_3series.html"><img src="bmw/3 series/1.jpg" alt=""></a>
+                <div class="product-item">
+                  <a href="vol_tiguan.html"><img src="vol/tiguan/1.jpg"alt=""></a>
                   <div class="down-content">
-                    <a href="bmw/3 series/1.jpg"><h4>2019 <div style="display: inline" class="make">BMW</div> 3 Series 320i xDrive</h4></a>
+                    <a href="vol_tiguan.html"><h4>2015 Volkswagen Tiguan</h4></a>
 
-                    <h6><small><del> $19,624</del></small> $18,619</h6>
+                    <h6><small><del> $14,577</del></small> $13,830</h6>
 
-                    <p>180 HP &nbsp;/&nbsp; BMW &nbsp;/&nbsp; 2017 &nbsp;/&nbsp; AWD</p>
+                    <p> 200 HP &nbsp;/&nbsp; Volkswagen &nbsp;/&nbsp; 2015 &nbsp;/&nbsp; AWD</p>
 
                     <small>
-                      <strong title="Author"><i class="fa fa-dashboard"></i> 78,146</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                      <strong title="Author"><i class="fa fa-cube"></i> Black</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <strong title="Author"><i class="fa fa-dashboard"></i> 103,760</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                      <strong title="Author"><i class="fa fa-cube"></i> Silver</strong>&nbsp;&nbsp;&nbsp;&nbsp;
                       <strong title="Views"><i class="fa fa-cog"></i> Automatic</strong>
                     </small>
                   </div>
@@ -258,30 +245,49 @@
               </div>
 
               <div class="col-md-6">
-                <div class="product-item 2019 Chevrolet 25to30">
-                  <a href="chev_blazer.html"><img src="chev/Blazer/1.png"alt=""></a>
+                <div class="product-item">
+                  <a href="Tesla_ModelS.html"><img src="Camera Roll/image.png" alt=""></a>
                   <div class="down-content">
-                    <a href="chev_blazer.html"><h4>2019 <div style="display: inline" class="make">Chevrolet</div> Blazer</h4></a>
+                    <a href="Tesla_ModelS.html"><h4></h4>2014 Tesla Model S</a>
 
-                    <h6><small><del> $29,090</del></small> $27,600</h6>
+                    <h6><small><del> $31,341</del></small> $29,735</h6>
 
-                    <p> 193 HP &nbsp;/&nbsp; Chevrolet &nbsp;/&nbsp; 2019 &nbsp;/&nbsp; FWD</p>
+                    <p>250 HP &nbsp;/&nbsp; Tesla  &nbsp;/&nbsp; 2014 &nbsp;/&nbsp; RWD</p>
 
                     <small>
-                      <strong title="Author"><i class="fa fa-dashboard"></i> 31,879</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                      <strong title="Author"><i class="fa fa-cube"></i> White</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <strong title="Author"><i class="fa fa-dashboard"></i> 78,404</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                      <strong title="Author"><i class="fa fa-cube"></i> blue</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <strong title="Views"><i class="fa fa-cog"></i> electric</strong>
+                    </small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="product-item">
+                  <a href="mazda_.html"><img src="mazda/1.png"alt=""></a>
+                  <div class="down-content">
+                    <a href="mazda_.html"><h4>2019 Mazda CX-3</h4></a>
+
+                    <h6><small><del> $22,081</del></small> $20,950</h6>
+
+                    <p> 148 HP  &nbsp;/&nbsp; Mazda &nbsp;/&nbsp; 2019 &nbsp;/&nbsp; AWD </p>
+
+                    <small>
+                      <strong title="Author"><i class="fa fa-dashboard"></i> 32,662</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                      <strong title="Author"><i class="fa fa-cube"></i> Blue</strong>&nbsp;&nbsp;&nbsp;&nbsp;
                       <strong title="Views"><i class="fa fa-cog"></i> Automatic</strong>
                     </small>
                   </div>
                 </div>
               </div>
+
               <div class="col-md-12">
                 <ul class="pages">
-                  <li class="active"><a href="cars.html">1</a></li>
+                  <li><a href="cars.html">1</a></li>
                   <li><a href="cars_2.html">2</a></li>
                   <li><a href="cars_3.html">3</a></li>
-                  <li><a href="cars_4.html">4</a></li>
-                  <li><a href="cars_5.html">5</a></li>
+                  <li class="active"><a href="cars_4.html">4</a></li>                  
                 </ul>
               </div>
             </div>
@@ -301,7 +307,6 @@
         </div>
       </div>
     </footer>
-
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -378,10 +383,6 @@
     <!-- Additional Scripts -->
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/owl.js"></script>
-    <script src="assets/js/brandfilter.js"></script>
-    <script src="assets/js/yearfilter.js"></script>\
-    <script src="assets/js/pricefilter.js"></script>
   </body>
 
 </html>
-
