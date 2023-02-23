@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Car Website Admin Panel</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#add-car">Add Car</a></li>
+        <li><a href="#edit-car">Edit Car</a></li>
+        <li><a href="#delete-car">Delete Car</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="add-car">
+      <h2>Add Car</h2>
+      <form>
+        <label for="make">Make:</label>
+        <input type="text" id="make" name="make"><br>
+        <label for="model">Model:</label>
+        <input type="text" id="model" name="model"><br>
+        <label for="year">Year:</label>
+        <input type="text" id="year" name="year"><br>
+        <input type="submit" value="Add Car">
+      </form>
+    </section>
+    <section id="edit-car">
+      <h2>Edit Car</h2>
+      <form>
+        <label for="car-id">Car ID:</label>
+        <input type="text" id="car-id" name="car-id"><br>
+        <label for="make">Make:</label>
+        <input type="text" id="make" name="make"><br>
+        <label for="model">Model:</label>
+        <input type="text" id="model" name="model"><br>
+        <label for="year">Year:</label>
+        <input type="text" id="year" name="year"><br>
+        <input type="submit" value="Edit Car">
+      </form>
+    </section>
+    <section id="delete-car">
+      <h2>Delete Car</h2>
+      <form>
+        <label for="car-id">Car ID:</label>
+        <input type="text" id="car-id" name="car-id"><br>
+        <input type="submit" value="Delete Car">
+      </form>
+    </section>
+  </main>
+</body>
+</html>
+
+<style>
+    /* reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* set font and background color */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+
+/* style header and navigation */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+}
+header nav ul li {
+  margin-right: 20px;
+}
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* style main content sections */
+main {
+  padding: 20px;
+}
+main h2 {
+  margin-bottom: 20px;
+}
+main form label {
+  display: block;
+  margin-bottom: 10px;
+}
+main form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+</style>
