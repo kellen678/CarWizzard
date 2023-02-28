@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		body {
+	font-family: Arial, sans-serif;
+	background-color: #f0f0f0;
+	margin: 0;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 50px;
+	color: #d33;
+	text-shadow: 2px 2px #222;
+	font-size: 3em;
+}
+
+.form-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+form {
+	background-color: #333;
+	color: #f0f0f0;
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px #222;
+	width: 400px;
+}
+
+h2 {
+	font-size: 1.5em;
+	margin-bottom: 20px;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="url"]{
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: none;
+	background-color: #f0f0f0;
+	color: #333
+}
+	</style>
+<head>
+	<title>Car Website Admin Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type = "text/javascript" src="CarWizard\assets\js\admin.js"></script>  
+
+
+</head>
+<body>
+	<h1>Car Website Admin Page</h1>
+	<div class="form-container">
+		<form id="addCarForm" onsubmit="addCar(); return false;">
+			<h2>Add a Car</h2>
+			<label for="id">Generate Unique Id:</label>
+			<input type="text" id="id" name="id" requisred>
+			<input type = "button" onclick = "generateCarId()" value = "Click me to Generate">  
+			<br>
+			<label for="Name">Name:</label>
+			<input type="text" id="Name" name="Name" required>
+			<br>
+			<label for="Price">Price:</label>
+			<input type="text" id="Price" name="Price" required>
+			<label for="Make">Make:</label>
+			<input type="text" id="Make" name="Make" required>
+			<br>
+			<label for="Model">Model:</label>
+			<input type="text" id="Model" name="Model" required>
+			<br>
+			<label for="Drivetrain">Drivetrain:</label>
+			<input type="text" id="Drivetrain" name="Drivetrain" required>
+			<br>
+			<label for="Transmission">Transmission:</label>
+			<input type="text" id="Transmission" name="Transmission" required>
+			<br>
+			<label for="Mileage">Mileage:</label>
+			<input type="text" id="Mileage" name="Mileage" required>
+			<br>
+			<label for="FuelEfficiency">Fuel Efficiency:</label>
+			<input type="text" id="FuelEfficiency" name="FuelEfficiency" required>
+			<br>
+			<label for="Engine">Engine:</label>
+			<input type="text" id="Engine" name="Engine" required>
+			<br>
+			<label for="Horsepower">Horsepower:</label>
+			<input type="text" id="Horsepower" name="Horsepower" required>
+			<br>
+			<label for="Year">Year:</label>
+			<input type="text" id="Year" name="Year" required>
+			<br>
+			<label for="Interior Color">Interior Color:</label>
+			<input type="text" id="Interior Color" name="Color" required>
+			<br>
+			<label for="Exterior Color">Exterior Color:</label>
+			<input type="text" id="Exterior Color" name="Exterior Color" required>
+			<br>
+			<label for="Vehicle Description">Vehicle Description:</label>
+			<input type="text" id="Vehicle Description" name="Vehicle Description" required>
+			<br>
+			<label for="Vehicle Extras">Vehicle Extras:</label>
+			<input type="text" id="Vehicle Extras" name="Vehicle Extras" required>
+			<br>
+
+			
+			<input type = "button" onclick = "addCar()" value = "Submit"> 
+		</form>
+		<form id="addPhotoForm" onsubmit="addPhoto(); return false;">
+			<h2>Add a Photo</h2>
+			<label for="photoCarMake">Car Make:</label>
+			<input type="text" id="photoCarMake" name="photoCarMake" required>
+			<br>
+			<label for="photoCarModel">Car Model:</label>
+			<input type="text" id="photoCarModel" name="photoCarModel" required>
+			<br>
+			<label for="photoURL">Photo URL:</label>
+			<input type="url" id="photoURL" name="photoURL" required>
+			<br>
+			<input type="submit" value="Add Photo">
+		</form>
+	</div>
+</body>
+</html>
