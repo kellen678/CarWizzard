@@ -58,14 +58,12 @@ input[type="url"]{
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type = "text/javascript" src="CarWizard\assets\js\admin.js"></script>  
-
-
-</head>
+	<script src="\admin.js"></script>
+	
 <body>
 	<h1>Car Website Admin Page</h1>
 	<div class="form-container">
-		<form id="addCarForm" onsubmit="addCar(); return false;">
+		<form id="addCarForm" onsubmit= "addCar()" return false;">
 			<h2>Add a Car</h2>
 			<label for="id">Generate Unique Id:</label>
 			<input type="text" id="id" name="id" requisred>
@@ -132,6 +130,9 @@ input[type="url"]{
 			<br>
 			<input type="submit" value="Add Photo">
 		</form>
+		<script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-database.js"></script>
+		<script src="src/admin.js"></script>
 	</div>
 </body>
 </html>
