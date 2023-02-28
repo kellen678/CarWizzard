@@ -3,6 +3,40 @@
 <head>
   <title>Admin Login</title>
   <style>
+    .google-btn {
+  background-color: #DB4437;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+}
+.google-btn:hover {
+  background-color: #E87E6C;
+}
+.google-btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+.skip-btn {
+  background-color: #DB4437;
+  display: inline-block;
+  color: white;
+  font-size: 12px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.skip-btn:hover {
+  background-color: #E87E6C;
+}
+.skip-btn:focus {
+  outline: none;
+  box-shadow: none;
+}
     body {
       background-color: #f7f7f7;
       font-family: Arial, sans-serif;
@@ -62,11 +96,11 @@
   <div class="login-box">
     <h1>Admin Login</h1>
     <form>
-      <input type="text" placeholder="Username">
-      <input type="password" placeholder="Password">
-      <input type="submit" value="Sign In">
+    <button  onclick="signInWithPopup()" class="google-btn">Sign in with Google</button>
     </form>
-    <p>Don't have an account? <a href="#">Contact admin at </a></p>
+    <p>Can't sign in? Contact an admin at <a href= "mailto: Carwizard435@yahoo.com" > <br> Carwizard435@yahoo.com</a></p>
+    <button class="skip-btn">Judges click her to skip</button>
   </div>
 </body>
+<script type="text/javascript" src="/CarWizard/assets/js/googleprovider.js"></script>
 </html>
