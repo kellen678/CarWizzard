@@ -102,8 +102,8 @@
                   <option value="condition">Used</option>
                 </select>
   
-                <select id="year" onchange="getSelectedValueYear()">
-                  <option selected="selected">Year</option>
+                <select id="year">
+                  <option selected="Year">Year</option>
                   <option value="2022">2022</option>
                   <option value="2021">2021</option>
                   <option value="2020">2020</option>
@@ -120,8 +120,8 @@
                   <option value="2007">2007</option>
                 </select>
   
-                <select id="make" onchange="getSelectedValueMake()">
-                  <option selected="selected">Make</option>
+                <select id="make">
+                  <option selected="Make">Make</option>
                   <option value="Acura">Acura</option>
                   <option value="Audi">Audi</option>
                   <option value="BMW">BMW</option>
@@ -144,8 +144,8 @@
                   <option value="Lexus">Lexus</option>
                 </select>
   
-                <select id="price" onchange="getSelectedValuePrice()">
-                  <option selected="selected">Price</option>
+                <select id="price">
+                  <option selected="Price">Price</option>
                   <option value="0to5">$0-$5,000</option>
                   <option value="5to10">$5,000-$10,000</option>
                   <option value="15to20">$15,000-$20,000</option>
@@ -154,7 +154,8 @@
                   <option value="30to35">$30,000-$35,000</option>
                   <option value="40+">$40,000+</option>
                 </select>
-                <button type="button" class="filled-button btn-block">Search</button>
+                <button type="button" onclick="getSelectedValuePrice()" class="filled-button btn-block">Search</button>
+                <button type="button" onclick="ResetFilter()" class="filled-button btn-block">reset</button>
               </form>
             </div>
           </div>
@@ -162,7 +163,7 @@
           <div class="col-md-9">
             <div class="row">
               <div class="col-md-6">
-                <div class="product-item">
+                <div class="product-item 2019 Toyota 20-25">
                   <a href="toy_tacoma.html"><img src="toy_tac/1.png" alt=""></a>
                   <div class="down-content">
                     <a href="toy_tacoma.html"><h4>2019 Toyota Tacoma SR</h4></a>
@@ -181,7 +182,7 @@
               </div>
 
               <div class="col-md-6">
-                <div class="product-item">
+                <div class="product-item 2019 Honda 30to35">
                   <a href="Honda_ridgeline.html"><img src="honda_tr/1.png" alt=""></a>
                   <div class="down-content">
                     <a href="Honda_ridgeline.html"><h4>2019 Honda Ridgeline</h4></a>
@@ -200,7 +201,7 @@
               </div>
 
               <div class="col-md-6">
-                <div class="product-item">
+                <div class="product-item 2016 Ford 25to30">
                   <a href="ford_f150.html"><img src="for_f150/1.jpg" alt=""></a>
                   <div class="down-content">
                     <a href="ford_f150.html"><h4> 2016 Ford F-150</h4></a>
@@ -219,7 +220,7 @@
               </div>
 
               <div class="col-md-6">
-                <div class="product-item">
+                <div class="product-item 2016 Honda 30to35">
                   <a href="honda_accord.html"><img src="honda_sedan/1.jpg"alt=""></a>
                   <div class="down-content">
                     <a href="vol_tiguan.html"><h4>2016 Honda Accord</h4></a>
@@ -238,7 +239,7 @@
               </div>
 
               <div class="col-md-6">
-                <div class="product-item">
+                <div class="product-item 2022 Toyota 40+">
                   <a href="toyota_4 runner.html"><img src="toyota_4runner/1.png" alt=""></a>
                   <div class="down-content">
                     <a href="toyota_4 runner.html"><h4>2022 Toyota 4Runner</h4></a>
@@ -257,7 +258,7 @@
               </div>
 
               <div class="col-md-6">
-                <div class="product-item">
+                <div class="product-item 2021 Ford 40+">
                   <a href="mustang.html"><img src="mustang/1.png"alt=""></a>
                   <div class="down-content">
                     <a href="mustang.html"><h4>2021 Ford Mustang GT</h4></a>
@@ -378,6 +379,8 @@
     <!-- Additional Scripts -->
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/owl.js"></script>
+    <script src="assets/js/Filter.js"></script>
+    <script src="assets/js/ResetFilter.js"></script>
   </body>
 
 </html>

@@ -102,8 +102,8 @@
                   <option value="condition">Used</option>
                 </select>
   
-                <select id="year" onchange="getSelectedValueYear()">
-                  <option selected="selected">Year</option>
+                <select id="year">
+                  <option selected="Year">Year</option>
                   <option value="2022">2022</option>
                   <option value="2021">2021</option>
                   <option value="2020">2020</option>
@@ -120,8 +120,8 @@
                   <option value="2007">2007</option>
                 </select>
   
-                <select id="make" onchange="getSelectedValueMake()">
-                  <option selected="selected">Make</option>
+                <select id="make">
+                  <option selected="Make">Make</option>
                   <option value="Acura">Acura</option>
                   <option value="Audi">Audi</option>
                   <option value="BMW">BMW</option>
@@ -144,8 +144,8 @@
                   <option value="Lexus">Lexus</option>
                 </select>
   
-                <select id="price" onchange="getSelectedValuePrice()">
-                  <option selected="selected">Price</option>
+                <select id="price">
+                  <option selected="Price">Price</option>
                   <option value="0to5">$0-$5,000</option>
                   <option value="5to10">$5,000-$10,000</option>
                   <option value="15to20">$15,000-$20,000</option>
@@ -154,7 +154,8 @@
                   <option value="30to35">$30,000-$35,000</option>
                   <option value="40+">$40,000+</option>
                 </select>
-                <button type="button" class="filled-button btn-block">Search</button>
+                <button type="button" onclick="getSelectedValuePrice()" class="filled-button btn-block">Search</button>
+                <button type="button" onclick="ResetFilter()" class="filled-button btn-block">reset</button>
               </form>
             </div>
           </div>
@@ -162,7 +163,7 @@
           <div class="col-md-9">
             <div class="row">
               <div class="col-md-6">
-                <div class="product-item">
+                <div class="product-item 2017 Ram 25to30">
                   <a href="ram_.html"><img src="ram/1.jpg" alt=""></a>
                   <div class="down-content">
                     <a href="ram_.html"><h4>2017 Ram 1500</h4></a>
@@ -181,7 +182,7 @@
               </div>
 
               <div class="col-md-6">
-                <div class="product-item">
+                <div class="product-item 2020 Toyota 20to25">
                   <a href="toyota_.html"><img src="toyota/camry/1.png" alt=""></a>
                   <div class="down-content">
                     <p style="padding: 10px; margin: 23px">
@@ -201,7 +202,7 @@
               </div>
 
               <div class="col-md-6">
-                <div class="product-item">
+                <div class="product-item 2016 Toyota 15to20">
                   <a href="toyota_highlander.html"><img src="toyota/highlander/1.jpg" alt=""></a>
                   <div class="down-content">
                     <a href="toyota_highlander.html"><h4> 2016 Toyota Highlander</h4></a>
@@ -220,7 +221,7 @@
               </div>
 
               <div class="col-md-6">
-                <div class="product-item">
+                <div class="product-item 2015 Volkswagen 10to15">
                   <a href="vol_tiguan.html"><img src="vol/tiguan/1.jpg"alt=""></a>
                   <div class="down-content">
                     <a href="vol_tiguan.html"><h4>2015 Volkswagen Tiguan</h4></a>
@@ -239,7 +240,7 @@
               </div>
 
               <div class="col-md-6">
-                <div class="product-item">
+                <div class="product-item 2014 Telsa 25to30">
                   <a href="Tesla_ModelS.html"><img src="Camera Roll/image.png" alt=""></a>
                   <div class="down-content">
                     <a href="Tesla_ModelS.html"><h4></h4>2014 Tesla Model S</a>
@@ -258,7 +259,7 @@
               </div>
 
               <div class="col-md-6">
-                <div class="product-item">
+                <div class="product-item 2019 Mazda 20to25">
                   <a href="mazda_.html"><img src="mazda/1.png"alt=""></a>
                   <div class="down-content">
                     <a href="mazda_.html"><h4>2019 Mazda CX-3</h4></a>
@@ -379,6 +380,8 @@
     <!-- Additional Scripts -->
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/owl.js"></script>
+    <script src="assets/js/Filter.js"></script>
+    <script src="assets/js/ResetFilter.js"></script>
   </body>
 
 </html>

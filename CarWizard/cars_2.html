@@ -102,8 +102,8 @@
                   <option value="condition">Used</option>
                 </select>
   
-                <select id="year" onchange="getSelectedValueYear()">
-                  <option selected="selected">Year</option>
+                <select id="year">
+                  <option selected="Year">Year</option>
                   <option value="2022">2022</option>
                   <option value="2021">2021</option>
                   <option value="2020">2020</option>
@@ -120,8 +120,8 @@
                   <option value="2007">2007</option>
                 </select>
   
-                <select id="make" onchange="getSelectedValueMake()">
-                  <option selected="selected">Make</option>
+                <select id="make">
+                  <option selected="Make">Make</option>
                   <option value="Acura">Acura</option>
                   <option value="Audi">Audi</option>
                   <option value="BMW">BMW</option>
@@ -144,8 +144,8 @@
                   <option value="Lexus">Lexus</option>
                 </select>
   
-                <select id="price" onchange="getSelectedValuePrice()">
-                  <option selected="selected">Price</option>
+                <select id="price">
+                  <option selected="Price">Price</option>
                   <option value="0to5">$0-$5,000</option>
                   <option value="5to10">$5,000-$10,000</option>
                   <option value="15to20">$15,000-$20,000</option>
@@ -154,7 +154,8 @@
                   <option value="30to35">$30,000-$35,000</option>
                   <option value="40+">$40,000+</option>
                 </select>
-                <button type="button" class="filled-button btn-block">Search</button>
+                <button type="button" onclick="getSelectedValuePrice()" class="filled-button btn-block">Search</button>
+                <button type="button" onclick="ResetFilter()" class="filled-button btn-block">reset</button>
               </form>
             </div>
           </div>
@@ -162,7 +163,7 @@
           <div class="col-md-9">
             <div class="row">
               <div class="col-md-6">
-                <div class="product-item">
+                <div class="product-item 2019 Chevrolet 15to20">
                   <a href="chev_trax.html"><img src="chev/trax/1.png" alt=""></a>
                   <div class="down-content">
                     <a href="chev_trax.html"><h4> 2019 Chevrolet Trax Premier</h4></a>
@@ -181,7 +182,7 @@
               </div>
 
               <div class="col-md-6">
-                <div class="product-item">
+                <div class="product-item 2020 Ford 20to25">
                   <a href="ford_escape.html"><img src="ford/escape/1.png" alt=""></a>
                   <div class="down-content">
                     <a href="ford_escape.html"><h4>2020 Ford Escape</h4></a>
@@ -200,7 +201,7 @@
               </div>
 
               <div class="col-md-6">
-                <div class="product-item">
+                <div class="product-item 2019 Ford 25-30">
                   <a href="for_edge.html"><img src="ford/edge/1.jpg" alt=""></a>
                   <div class="down-content">
                     <a href="for_edge.html"><h4>2019 Ford Edge Titanium </h4></a>
@@ -219,7 +220,7 @@
               </div>
 
               <div class="col-md-6">
-                <div class="product-item">
+                <div class="product-item 2022 Honda 35to40">
                   <a href="honda_passport.html"><img src="honda/passport/1.jpg"alt=""></a>
                   <div class="down-content">
                     <a href="honda_passport.html"><h4> 2022 Honda Passport</h4></a>
@@ -238,7 +239,7 @@
               </div>
 
               <div class="col-md-6">
-                <div class="product-item">
+                <div class="product-item 2021 Honda 40+">
                   <a href="honda_pilot.html"><img src="honda/pilot/1.png" alt=""></a>
                   <div class="down-content">
                     <a href="honda_pilot.html"><h4>2021 Honda Pilot</h4></a>
@@ -257,7 +258,7 @@
               </div>
 
               <div class="col-md-6">
-                <div class="product-item">
+                <div class="product-item 2019 Hyundai 15to20">
                   <a href="hyundai_santa.html"><img src="hyundaI/santa/1.png"alt=""></a>
                   <div class="down-content">
                     <a href="hyundai_santa.html"><h4>2019 Hyundai Santa Fe</h4></a>
@@ -377,6 +378,8 @@
     <!-- Additional Scripts -->
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/owl.js"></script>
+    <script src="assets/js/Filter.js"></script>
+    <script src="assets/js/ResetFilter.js"></script>
   </body>
 
 </html>
