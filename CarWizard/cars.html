@@ -108,8 +108,8 @@
                 <option value="condition">Used</option>
               </select>
 
-              <select id="year" onchange="getSelectedValueYear()">
-                <option selected="selected">Year</option>
+              <select id="year">
+                <option selected="Year">Year</option>
                 <option value="2022">2022</option>
                 <option value="2021">2021</option>
                 <option value="2020">2020</option>
@@ -126,8 +126,8 @@
                 <option value="2007">2007</option>
               </select>
 
-              <select id="make" onchange="getSelectedValueMake()">
-                <option selected="selected">Make</option>
+              <select id="make">
+                <option selected="Make">Make</option>
                 <option value="Acura">Acura</option>
                 <option value="Audi">Audi</option>
                 <option value="BMW">BMW</option>
@@ -140,6 +140,7 @@
                 <option value="Nissan">Nissan</option>
                 <option value="Ram">Ram</option>
                 <option value="Toyota">Toyota</option>
+                <option value="Telsa">Telsa</option>
                 <option value="Volkswagen">Volkswagen</option>
                 <option value="Volvo">Volvo</option>
                 <option value="Mazda">Mazda</option>
@@ -149,8 +150,8 @@
                 <option value="Lexus">Lexus</option>
               </select>
 
-              <select id="price" onchange="getSelectedValuePrice()">
-                <option selected="selected">Price</option>
+              <select id="price">
+                <option selected="Price">Price</option>
                 <option value="0to5">$0-$5,000</option>
                 <option value="5to10">$5,000-$10,000</option>
                 <option value="15to20">$15,000-$20,000</option>
@@ -159,7 +160,8 @@
                 <option value="30to35">$30,000-$35,000</option>
                 <option value="40+">$40,000+</option>
               </select>
-              <button type="button" class="filled-button btn-block">Search</button>
+              <button type="button" onclick="getSelectedValuePrice()" class="filled-button btn-block">Search</button>
+              <button type="button" onclick="ResetFilter()" class="filled-button btn-block">reset</button>
             </form>
           </div>
         </div>
@@ -172,12 +174,12 @@
                 <div class="down-content">
 
                   <a href="acura_ilx.html">
-                    <h4>2016 Acura ILX </h4>
+                    <h4>2016 Acura ILX</h4>
                   </a>
 
                   <h6><small><del> $20,535</del></small> $19,483</h6>
 
-                  <p;p>201 HP &nbsp;/&nbsp; Acura &nbsp;/&nbsp; 2016 &nbs/&nbsp; FWD</p>
+                  <p>201 HP &nbsp;/&nbsp; Acura &nbsp;/&nbsp; 2016 &nbsp; FWD</p>
 
                     <small>
                       <strong title="Author"><i class="fa fa-dashboard"></i> 50,741 MI</strong> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -307,6 +309,7 @@
     </div>
   </div>
 
+
   <footer>
     <div class="container">
       <div class="row">
@@ -396,9 +399,8 @@
   <!-- Additional Scripts -->
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/owl.js"></script>
-  <script src="assets/js/brandfilter.js"></script>
-  <script src="assets/js/yearfilter.js"></script>\
-  <script src="assets/js/pricefilter.js"></script>
+  <script src="assets/js/Filter.js"></script>
+  <script src="assets/js/ResetFilter.js"></script>
 </body>
 
 </html>
